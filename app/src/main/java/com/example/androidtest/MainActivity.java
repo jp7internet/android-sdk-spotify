@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     ConnectionParams connectionParams =
                         new ConnectionParams.Builder(CLIENT_ID)
                             .setRedirectUri(REDIRECT_URI)
+                            .showAuthView(true)
                             .build();
 
                     SpotifyAppRemote.connect(this, connectionParams,
